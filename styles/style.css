@@ -60,10 +60,16 @@ body {
 
 .create-playlist {
     overflow: hidden;
+    flex-shrink: 0;
+}
+
+.title-playlist {
+    padding: 1rem 0;
 }
 
 .my-playlist {
     overflow: auto;
+    padding: 1rem 0;
 }
 
 .sidebar-icons {
@@ -74,11 +80,13 @@ body {
     color: #fff;
 }
 
-.plus {
-    color: #fff;
+.create-playlist-section {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 }
 
-.plus-icon {
+.plus {
     background-color: #808080;
     color: #000;
     width: 40px;
@@ -120,7 +128,9 @@ body {
 ul li {
     color: #fff;
     list-style: none;
+    padding: .2rem;
 }
+
 
 .white-line {
     height: 1px;
@@ -128,6 +138,17 @@ ul li {
     width: 100%;
     margin: 0.5rem 0;
 }
+
+/* ----- PLAYER ----- */
+
+.player {
+    height: 90px;
+    background-color: var(--gray);
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 /* ----- LIBRARY ----- */
 
