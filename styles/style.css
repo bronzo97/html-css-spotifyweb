@@ -146,9 +146,83 @@ ul li {
     background-color: var(--gray);
     display: flex;
     justify-content: space-between;
+    padding: 1rem;
 }
 
+/* ----- LEFT COL ----- */
 
+.song-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+
+.song-album {
+    width: 50px;
+}
+
+img {
+    width: 100%;
+}
+
+.song-interaction {
+    color: #808080;
+    display: flex;
+    gap: 1rem;
+}
+
+/* ----- CENTER COL ----- */
+
+.player-buttons {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 1rem;
+}
+
+.play-btn {
+    font-size: 2rem;
+}
+
+.player-range {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 400px;
+
+}
+
+.middle-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.player-range-song {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #808080;
+}
+
+.player-range-step {
+    background-color: #fff;
+    height: 100%;
+    width: 20%;
+}
+
+/* ----- RIGHT COL ----- */
+
+.right-col {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 1rem;
+}
 
 /* ----- LIBRARY ----- */
 
