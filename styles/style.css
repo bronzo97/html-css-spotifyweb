@@ -26,20 +26,110 @@ body {
 .main-container {
     display: flex;
     flex-grow: 1;
+    overflow: hidden;
 }
+
+/* ----- SIDE-MENU ----- */
 
 .sidebar {
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
     background-color: var(--black);
-    min-width: 200px;
+    width: 250px;
+    padding: 1rem;
 }
+
+.playlist-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.side-menu {
+    padding: 1rem;
+    flex-shrink: 0;
+}
+
+.spotify-logo--text {
+    color: #fff;
+    padding-right: 5rem;
+    flex-shrink: 0;
+}
+
+.create-playlist {
+    overflow: hidden;
+}
+
+.my-playlist {
+    overflow: auto;
+}
+
+.sidebar-icons {
+    width: 20px;
+}
+
+.create-playlist {
+    color: #fff;
+}
+
+.plus {
+    color: #fff;
+}
+
+.plus-icon {
+    background-color: #808080;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.install-icon {
+    width: 20px;
+    color: #808080;
+}
+
+.account-icon {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    background-color: #808080;
+    border-radius: 50%; 
+
+}
+
+.account {
+    color: #fff;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+.install-app,
+.user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 
 ul li {
     color: #fff;
     list-style: none;
 }
+
+.white-line {
+    height: 1px;
+    background-color: #fff;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+/* ----- LIBRARY ----- */
 
 .library {
     display: flex;
