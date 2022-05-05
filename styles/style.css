@@ -63,6 +63,10 @@ body {
     flex-shrink: 0;
 }
 
+.spotify-logo {
+    display: none;
+}
+
 .create-playlist {
     overflow: hidden;
     flex-shrink: 0;
@@ -153,6 +157,33 @@ ul li {
     margin: 0.5rem 0;
 }
 
+ul li:hover,
+.create-playlist-section:hover{
+    color: #fff;
+}
+
+.plus:hover {
+    background-color: #fff;
+}
+
+.play-hover {
+    display: none;
+    position: absolute;
+    font-size: 4rem;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.album-cover {
+    position: relative;
+}
+
+.album-cover:hover .play-hover {
+    display: block;
+}
+
 /* ----- PLAYER ----- */
 
 .player {
@@ -161,6 +192,10 @@ ul li {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+}
+
+.play-btn:hover {
+    transform: scale(1.1);
 }
 
 /* ----- LEFT COL ----- */
@@ -193,6 +228,11 @@ img {
     display: flex;
     gap: 1rem;
 }
+
+.left-icon:hover {
+    color: #fff;
+}
+
 
 /* ----- CENTER COL ----- */
 
@@ -261,6 +301,10 @@ img {
 
 .right-icon {
     color: #808080;
+}
+
+.right-icon:hover {
+    color: #fff;
 }
 
 /* ----- LIBRARY ----- */
@@ -368,21 +412,80 @@ h2 {
 /* ----- MEDIA QUERIES ----- */
 
 @media screen and (max-width: 1100px) {
+
     .album-card {
     width: calc((100% / 4) - 1rem);
     }
 }
 
 @media screen and (max-width: 700px) {
+
     .album-card {
         width: calc((100% / 2) - 1rem);
         }
 }
 
 @media screen and (max-width: 600px) {
+    .song-interaction {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .song-album {
+        width: 25px;
+    }
+
+    .vol-range {
+        min-width: 60px;
+    }
     
 }
 
 @media screen and (max-width: 500px) {
-    
+
+    .vol-range {
+        min-width: 40px;
+    }
+
+    .playlist-container {
+        opacity: 0;
+    }
+
+    .sidebar-icons {
+        width: 20px;
+    }
+
+    .side-menu li {
+        padding: 0.2rem 0;
+    }
+
+    .spotify-logo--text,
+    .hide,
+    .white-line {
+        display: none;
+    }
+
+    .side-menu {
+        padding: 0.5rem 0;
+    }
+
+    .spotify-logo {
+        display: block;
+        color: #fff;
+        width: 20px;
+    }
+
+    .playlist-container {
+        width: 0%;
+    }
+
+    .sidebar {
+        width: 60px;
+    }
+
+    .right-icon {
+        display: none;
+    }
+
+
 }
