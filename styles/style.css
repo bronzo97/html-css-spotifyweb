@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
 }
 
 :root {
@@ -52,6 +53,10 @@ body {
     flex-shrink: 0;
 }
 
+.side-menu li {
+    color: #808080;
+}
+
 .spotify-logo--text {
     color: #fff;
     padding-right: 5rem;
@@ -65,11 +70,17 @@ body {
 
 .title-playlist {
     padding: 1rem 0;
+    text-transform: uppercase;
+    color: #fff;
 }
 
 .my-playlist {
     overflow: auto;
     padding: 1rem 0;
+}
+
+.my-playlist li {
+    color: #808080;
 }
 
 .sidebar-icons {
@@ -84,6 +95,7 @@ body {
     display: flex;
     align-items: center;
     gap: .5rem;
+    color: #808080;
 }
 
 .plus {
@@ -129,8 +141,10 @@ ul li {
     color: #fff;
     list-style: none;
     padding: .2rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
-
 
 .white-line {
     height: 1px;
@@ -224,6 +238,23 @@ img {
     gap: 1rem;
 }
 
+.vol-range {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #808080;
+    min-width: 100px;
+}
+
+.vol-range-step {
+    width: 20%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.right-icon {
+    color: #808080;
+}
+
 /* ----- LIBRARY ----- */
 
 .library {
@@ -252,7 +283,34 @@ img {
 
 }
 
+.albums {
+    flex-grow: 1;
+    background-color: var(--lighter-black);
+    overflow: auto;
+}
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.categories ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .category {
     text-transform: uppercase;
-    color: #000;
+    color: #808080;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }
