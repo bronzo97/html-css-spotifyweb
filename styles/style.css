@@ -172,6 +172,14 @@ ul li {
     flex-shrink: 0;
 }
 
+.song-author {
+    color: #fff;
+}
+
+.song-name {
+    color: #808080;
+}
+
 .song-album {
     width: 50px;
 }
@@ -310,15 +318,15 @@ img {
 }
 
 h2 {
-    padding: 1rem;
     color: #fff;
+    padding: 1rem 0;
 }
 
 .row {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    padding: 1rem;
+    flex-wrap: wrap;
 }
 
 .album-card {
@@ -332,7 +340,49 @@ h2 {
     align-items: center;
 }
 
+.recently-played {
+    padding: 1rem;
+}
+
 .recently-played .subtitle {
     color: #808080;
-    padding: 1rem;
+    padding: 0.5rem 0;
+}
+
+.round img{
+    border-radius: 50%;
+}
+
+.recently-played img {
+    padding: 0.5rem 0;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.padding {
+    padding: 0 1rem;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+@media screen and (max-width: 1100px) {
+    .album-card {
+    width: calc((100% / 4) - 1rem);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .album-card {
+        width: calc((100% / 2) - 1rem);
+        }
+}
+
+@media screen and (max-width: 600px) {
+    
+}
+
+@media screen and (max-width: 500px) {
+    
 }
